@@ -13,7 +13,7 @@ We want to display a photo near the person with the matching weather and time of
 Css weather animation or gif -kemptosa
 
 Header -janicu
-
+thorough Figma - janicu
 Footer -janicu
 
 inputs
