@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HelloWeather from './Weather/HelloWeather';
-import getGeolocation from './GeoLocation/GeoLocation';
+import GetGeolocation from './GeoLocation/GeoLocation';
+import Demo from './GeoLocation/Reactgeolocated';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <HelloWeather/>
-    <getGeolocation/>
+    <GetGeolocation/>
   </React.StrictMode>
 );
 

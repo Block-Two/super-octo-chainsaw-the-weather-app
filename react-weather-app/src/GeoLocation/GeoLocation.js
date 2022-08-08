@@ -2,24 +2,24 @@ import React from "react";
 
 import {useGeolocated} from "react-geolocated"
 
-let getGeolocation = () => {
+let GetGeolocation = () => {
 
-    let lat = 0
-
-    let lon = 0
-
-
+    
+    
     const{coords, isGeoloactionAvailable, isGeolocationEnabled} =
-       useGeolocated({
+    useGeolocated({
         positionOptions: {
             enableHighAccuracy: false,
         },
         userDecisionTimeout: 5000,
     })
+    let lat = coords.latitude
 
+    let lon = coords.longitude
+    
     return (
         <h1>Your Postions is {lat} and {lon} </h1>
     )
 }
 
-export default getGeolocation
+export default GetGeolocation
