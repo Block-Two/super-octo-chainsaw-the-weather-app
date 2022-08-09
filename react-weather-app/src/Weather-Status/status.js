@@ -10,3 +10,5 @@ let fetchWeather = function () {
         )
     })
 }
+
+export default fetchWeather

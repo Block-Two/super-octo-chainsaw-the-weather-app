@@ -1,7 +1,7 @@
 // Test
 
-export default HelloWeather = function(){
-    return(
-        <h1>Whats the Weather?</h1>
-    )
-}
+// export default HelloWeather = function(){
+//     return(
+//         <h1>Whats the Weather?</h1>
+//     )
+// }
