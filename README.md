@@ -4,7 +4,7 @@ First Group Project
 
 First objective to get "whats the weather?" on the page!
 
-We want to get Geo- location from user or zip code or IP search if denied -Zacamz
+We want to get Geo- location from user[x] or zip code [] or IP []search if denied -Zacamz
 
 We want to get the weather from an API: openweathermap -turneyz
 
