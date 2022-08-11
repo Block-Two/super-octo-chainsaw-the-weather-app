@@ -13,13 +13,11 @@ let GetGeolocation = () => {
         },
         userDecisionTimeout: 5000,
     })
-    let lat = coords.latitude
-
-    let lon = coords.longitude
+    console.log(coords)
     
-    return (
-        <h1>Your Postions is {lat} and {lon} </h1>
-    )
+    return !coords ?(
+        <h1>Getting Location</h1>
+    ) : (<h1>Your Postions is {coords.latitude} and {coords.longitude} </h1>)
 }
 
 export default GetGeolocation
