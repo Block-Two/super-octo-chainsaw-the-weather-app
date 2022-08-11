@@ -6,7 +6,7 @@ let GetGeolocation = () => {
 
     
     
-    const{coords, isGeoloactionAvailable, isGeolocationEnabled} =
+    const{coords} =
     useGeolocated({
         positionOptions: {
             enableHighAccuracy: false,
