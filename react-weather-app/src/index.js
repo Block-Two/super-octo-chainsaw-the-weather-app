@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import fetchWeather from './Weather-Status/status.js';
+import FetchWeather from './Weather-Status/status.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-   <fetchWeather />
+   <FetchWeather />
   </React.StrictMode>
 );
 
