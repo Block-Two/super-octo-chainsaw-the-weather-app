@@ -4,8 +4,11 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HelloWeather from './Weather/HelloWeather';
-import GetGeolocation from './GeoLocation/GeoLocation';
+import GetGeolocation from './GeoLocation/GeoLocation.js';
 import Demo from './GeoLocation/Reactgeolocated';
+import getPlace from './MapBox/MapBox.js';
+
+getPlace()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
