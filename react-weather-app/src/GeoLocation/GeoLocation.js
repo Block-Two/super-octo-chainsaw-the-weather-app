@@ -13,7 +13,6 @@ let GetGeolocation = () => {
         },
         userDecisionTimeout: 5000,
     })
-    console.log(coords)
     
     return !coords ?(
         <h1>Getting Location</h1>

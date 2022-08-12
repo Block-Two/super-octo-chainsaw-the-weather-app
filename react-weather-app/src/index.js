@@ -6,9 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import HelloWeather from './Weather/HelloWeather';
 import GetGeolocation from './GeoLocation/GeoLocation.js';
 import Demo from './GeoLocation/Reactgeolocated';
-import getPlace from './MapBox/MapBox.js';
+import  DisplayZipCode from './MapBox/MapBox.js';
 
-getPlace()
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +16,7 @@ root.render(
    <HelloWeather/>
     <Demo/>
     <GetGeolocation/>
+    <DisplayZipCode/>
   </React.StrictMode>
 );
 
