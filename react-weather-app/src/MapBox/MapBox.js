@@ -6,34 +6,30 @@ let getuserslocation = async () =>{
         return locationPromise
 }
 
-let getPlace = async() => {
+let getPlace = () => {
 
-    let place = []
+    
 
      getuserslocation()
     .then(({coords})=>{
     
-    fetch("./apikey.json")
+   return fetch("./apikey.json")
     .then(response => response.json())
     .then(apikey =>
          fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${coords.longitude},${coords.latitude}.json?types=postcode&access_token=${apikey}`))
     .then(response => response.json())
-    .then(rehydrated => place.push(rehydrated))
-    })
-
-    console.log(place)
-
-    return place
 }
 
 let DisplayZipCode = function() {
 
-    let zipcode = getPlace().then(zipcode => zipcode[0].features[0].properties.text )
+    let zipcode = getPlace()
 
-    
+    console.log(zipcode)
  
-    return(
-        <h3> is your zipcode? {zipcode[0].features[0].properties.text}</h3>
+    return ! zipcode ?(
+        <h3>Please wait</h3>
+        ) : (
+            <h3> is your zipcode? {zipcode.features.text}</h3>
     )
 
 }
